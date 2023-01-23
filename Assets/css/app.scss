@@ -1,0 +1,255 @@
+@import 'variables', 'animation', 'nav';
+
+@media screen and (max-width: 992px) {
+    html {
+      font-size: 50.5%;
+    }
+}
+
+body {
+    background: $backgroundColor;
+    font-family: "Courier New", Courier, monospace;
+    color: $text1Color;
+    ul {
+        list-style: none;
+    }
+}
+
+main {
+    height: 100%;
+    position: relative;
+}
+
+footer {
+    background-color: $secondBackground;
+    a {
+      color: $text1Color !important;  
+    }
+    
+}
+  
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    pointer-events: none;
+    z-index: 10;
+  }
+  .terrain {
+    z-index: 200;
+    transform: scale(1.3);
+  }
+  .text {
+    font-family: Righteous;
+    text-align: center;
+    margin-bottom: 300px;
+    position: relative;
+    color: $moonColor;
+    font-size: 10rem;
+    z-index: 100;
+    font-weight: 900;
+    text-shadow: 1px 0 black, -2px 0 black, 10px 20px black, 0 -2px black,
+  }
+}
+
+.sidebar {
+    opacity: 0;
+    width: 100%;
+    padding-top: 60px;
+    background: $secondBackground;
+    position: absolute;
+    font-size: 1.5rem;
+    z-index: 1;
+    top: -455px;
+    ul {
+    margin-top: 35px;
+    padding: 0;
+  }
+   li {
+    padding: 20px;
+    border-bottom: 1px solid $thirdBackground;
+    transition: 0.5s;
+    color: white;
+  }
+   li:last-child {
+    border: none;
+  }
+   li:hover {
+    background: $moonColor;
+    color: $secondBackground;
+  }
+}
+  
+.title {
+    color: $moonColor;
+    width: 100%;
+    text-align: center;
+    margin: 50px 0px;
+
+    h1 {
+    font-size: 10rem;
+    font-family: $secondFont;
+    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black;
+    transform: translateY(-350px);
+    transition: 1s;
+  }
+   h3 {
+    color: $text1Color;
+    font-size: 2rem;
+    margin: 50px 0px 100px;
+  }
+  @media screen and (max-width: 992px) {
+      margin-top: 100px;
+  }
+  
+}
+
+.innerSection {
+    font-size: 1.4rem;
+    margin: 50px 0px;
+    display: flex;
+    justify-content: center;
+
+    > div {
+    max-width: 1400px;
+    border-radius: 30px;
+    background: $thirdBackground;
+    padding: 20px;
+    color: white;
+    position: relative;
+  }
+    > div img {
+    position: absolute;
+    top: -80px;
+    left: -100px;
+    clear: both;
+    width: 300px;
+  }
+}
+
+.containerJs1 {
+    max-width: 1200px;
+}
+
+.region {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+
+     h3 {
+    margin: 80px 0px 30px;
+  }
+     ul {
+    background-color: $semitrasnparentColor;
+    padding: 40px;
+    border: 4px solid $thirdBackground;
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 50px;
+    max-width: 1200px;
+    margin-bottom: 100px;
+  }
+     ul li {
+    font-size: 1.3rem;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    background: $thirdBackground;
+    margin: 20px;
+    border-radius: 50px;
+  }
+     ul li:hover {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: black;
+    background-color: $moonColor;
+    transform: scale(1.3);
+    transition: 0.1s linear;
+    text-shadow: 0px 0px 8px 2px black;
+  }
+  
+}
+
+.carouselTitle {
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 50px;
+}
+
+.myCarousel {
+    margin: auto;
+    max-width: 1200px;
+    text-align: center;
+    background-color: $thirdBackground;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-evenly;
+
+    .textCarousel {
+    font-size: 1.4rem;
+    max-width: 50%;
+    margin: 50px;
+  }
+    .textCarousel h3 {
+    font-size: 3rem;
+  }
+  @media screen and (max-width: 992px) {
+    flex-direction: column;
+    align-items: center;
+    .textCarousel {
+      max-width: 100%;
+    }
+  }
+}
+
+.carouselContainer {
+    width: 50%;
+    margin: 30px;
+}
+
+.semicircle {
+    float: left;
+    position: relative;
+    left: -50;
+    width: 450px;
+    height: 450px;
+    background: linear-gradient(90deg, transparent, transparent 50%, #fff);
+    border-radius: 50%;
+    shape-outside: circle(50%);
+    margin-right: 50px;
+    margin-left: -50px;
+
+    @media screen and (max-width: 992px) {
+      width: 250px;
+      height: 250px;
+  }
+}
+
+.card-body {
+    background-color: $secondBackground !important;
+}
+
+.btn {
+    color: #04ff00;
+    font-family: Righteous;
+    background-color: $secondBackground !important;
+}
