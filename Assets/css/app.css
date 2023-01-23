@@ -284,7 +284,7 @@ section .text {
 .title h1 {
   font-size: 10rem;
   font-family: Righteous;
-  text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black;
+  text-shadow: 1px 0 black, -2px 0 black, 10px 20px black, 0 -2px black;
   transform: translateY(-350px);
   transition: 1s;
 }
