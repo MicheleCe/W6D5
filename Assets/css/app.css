@@ -4,7 +4,6 @@
           animation: Waves 10s infinite;
   z-index: -1;
   position: absolute;
-  top: -100px;
   right: 0;
   width: 550px;
   height: 100%;
@@ -36,7 +35,7 @@
   z-index: -2;
   position: absolute;
   left: 0;
-  width: 550px;
+  width: 540px;
   height: 100%;
   transform: scale(-1, 1);
 }
@@ -60,7 +59,7 @@
     top: 0;
     width: 150px;
     -webkit-animation: none;
-    animation: none;
+            animation: none;
   }
 }
 
@@ -354,6 +353,12 @@ section .text {
   background: rgba(65, 90, 119, 0.7921568627);
   margin: 20px;
   border-radius: 50px;
+}
+@media screen and (max-width: 992px) {
+  .region ul li {
+    margin: 10px;
+    padding: 10px;
+  }
 }
 .region ul li:hover {
   font-size: 1.1rem;
