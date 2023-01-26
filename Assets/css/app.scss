@@ -258,3 +258,7 @@ section {
     font-family: Righteous;
     background-color: $secondBackground !important;
 }
+
+.del:hover {
+  transform: scale(1.3);
+}

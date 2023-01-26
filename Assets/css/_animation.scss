@@ -3,7 +3,7 @@
     z-index: -1;
     position: absolute;
     right: 0;
-    width: 540px;
+    width: 500px;
     height: 100%;
     
     .container {
@@ -53,9 +53,10 @@
     right: 20px;
   }
   @media screen and (max-width: 992px) {
-      top: 0;
-      width: 150px;
+      top: -100px;
+      width: 170px;
       animation: none;
+      max-height: 100px;
   }
 }
   
